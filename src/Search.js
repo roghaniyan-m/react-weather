@@ -7,7 +7,6 @@ export default function Search() {
     let htm = "";
     function handleResponse(response) {
         sr = `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`;
-
         htm = (
             <ul>
                 <li>Temperature: {Math.round(response.data.main.temp)} °C</li>
